@@ -1,4 +1,6 @@
 import React from 'react';
+import InfoBar from './InfoBar.jsx';
+import JobList from './JobList.jsx';
 
 class App extends React.Component {
   constructor(props){
@@ -11,7 +13,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>Hello World</div>
+      <div>
+        <InfoBar />
+        <JobList />
+      </div>
     )
   }
 }
