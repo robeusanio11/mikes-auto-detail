@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoBar = (props) => {
   return (
-    <>
+    <div class="info-bar">
       <h2>Mike's Auto Detail</h2>
       <button>Book An Appointment</button>
       <p>
@@ -28,7 +28,7 @@ const InfoBar = (props) => {
 
       <h4>Connect</h4>
       <a href=''>instagram</a>
-    </>
+    </div>
   )
 }
 

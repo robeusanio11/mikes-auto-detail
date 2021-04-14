@@ -1,6 +1,10 @@
-body {
+
+.home {
   display: flex;
-  direction: row;
+  flex-direction: row;
+}
+
+.info-bar {
   min-width: 400px;
   max-width: 400px;
 }

@@ -1,9 +1,12 @@
 import React from 'react';
+import JobListEntry from './JobListEntry.jsx';
 
-const JobList = (props) => {
+const JobList = ({ jobs }) => {
   return (
     <ul>
-      <JobListEntry />
+      {jobs.map((job) => (
+        <JobListEntry job={job}/>
+      ))}
     </ul>
   )
 }
