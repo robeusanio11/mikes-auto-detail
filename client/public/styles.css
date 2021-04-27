@@ -2,9 +2,17 @@
 .home {
   display: flex;
   flex-direction: row;
+  width: 100vw;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
 }
 
 .info-bar {
   min-width: 400px;
   max-width: 400px;
+}
+
+.main-col h3{
+  padding-left: 40px;
 }

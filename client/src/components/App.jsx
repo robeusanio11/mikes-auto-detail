@@ -33,7 +33,10 @@ class App extends React.Component {
     return (
       <div class="home">
         <InfoBar />
-        <JobList jobs={jobs}/>
+        <main class="main-col">
+          <h3>Book an Appointment</h3>
+          <JobList jobs={jobs}/>
+        </main>
       </div>
     )
   }
