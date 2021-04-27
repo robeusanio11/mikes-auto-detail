@@ -58,6 +58,11 @@ header hr{
 
 .info-bar text {
   font-size: 13px;
+  color: rgb(88, 88, 88);
+}
+
+.hours-title {
+  margin-bottom: 5px;
 }
 
 .main-col {
@@ -69,4 +74,43 @@ header hr{
 .main-col h3 {
   padding-left: 40px;
   font-size: medium;
+}
+
+.more-less {
+  color: rgb(62, 153, 214);
+  font-size: 13px;
+}
+
+.more-less:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hours-table {
+  margin-left: 15px;
+}
+
+.hours-table tr td{
+  padding: 4px;
+  font-size: 14px;
+  color: rgb(88, 88, 88);
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  color: rgb(62, 153, 214);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.links a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+}
+
+.links a:visited {
+  text-decoration: none;
+  color: rgb(62, 153, 214)
 }
