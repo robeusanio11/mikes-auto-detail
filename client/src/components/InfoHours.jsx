@@ -8,22 +8,6 @@ const InfoHours = () => {
   if (clicked) {
     return (
       <>
-      <h4>Location & Hours</h4>
-      <ul>
-        <li>Sun: Closed</li>
-        <li>Mon: 10:00 AM - 5:00 PM</li>
-        <li>Tue: 10:00 AM - 5:00 PM</li>
-        <li>Wed: 10:00 AM - 5:00 PM</li>
-        <li>Thu: 10:00 AM - 5:00 PM</li>
-        <li>Fri: 10:00 AM - 5:00 PM</li>
-        <li>Sat: Closed</li>
-      </ul>
-      <p class="more-less" onClick={() => setClicked(!clicked)}>See Less</p>
-      </>
-    )
-  } else {
-    return (
-      <>
         <h4 class="hours-title">Location & Hours</h4>
         <table class="hours-table">
           <tr>
@@ -57,8 +41,15 @@ const InfoHours = () => {
         </table>
         <p class="more-less" onClick={() => setClicked(!clicked)}>See More</p>
       </>
-    )
+    );
+  } else {
+    return (
+      <>
+        <p>OPEN TODAY UNTIL 5PM *CHANGE THIS LATER*</p>
+        <p class="more-less" onClick={() => setClicked(!clicked)}>See Less</p>
+      </>
+    );
   }
-}
+};
 
 export default InfoHours;
