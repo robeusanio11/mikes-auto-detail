@@ -31,13 +31,19 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class="home">
-        <InfoBar />
-        <main class="main-col">
-          <h3>Book an Appointment</h3>
-          <JobList jobs={jobs}/>
-        </main>
-      </div>
+      <>
+        <header>
+          HEADER GOES HERE
+          <hr></hr>
+        </header>
+        <div class="home">
+          <InfoBar />
+          <main class="main-col">
+            <h3>Book an Appointment</h3>
+            <JobList jobs={jobs}/>
+          </main>
+        </div>
+      </>
     )
   }
 }
