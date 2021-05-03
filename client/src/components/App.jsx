@@ -1,6 +1,7 @@
 import React from 'react';
 import InfoBar from './InfoBar.jsx';
 import JobList from './JobList.jsx';
+import Header from './Header.jsx';
 
 const jobs = [
   {
@@ -32,9 +33,13 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <header>
+        {/* <header>
           HEADER GOES HERE
           <hr></hr>
+        </header> */}
+        <header>
+          <Header />
+          <hr />
         </header>
         <div class="home">
           <InfoBar />
