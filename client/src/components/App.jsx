@@ -2,6 +2,7 @@ import React from 'react';
 import InfoBar from './InfoBar.jsx';
 import JobList from './JobList.jsx';
 import Header from './Header.jsx';
+import AppointmentJobList from './AppointmentJobList.jsx';
 
 const jobs = [
   {
@@ -66,19 +67,24 @@ class App extends React.Component {
   }
 
   render() {
+    // return (
+    //   <>
+    //     <header>
+    //       <Header />
+    //       <hr />
+    //     </header>
+    //     <div class="home">
+    //       <InfoBar />
+    //       <main class="main-col">
+    //         <h3>Book an Appointment</h3>
+    //         <JobList jobs={jobs}/>
+    //       </main>
+    //     </div>
+    //   </>
+    // )
     return (
       <>
-        <header>
-          <Header />
-          <hr />
-        </header>
-        <div class="home">
-          <InfoBar />
-          <main class="main-col">
-            <h3>Book an Appointment</h3>
-            <JobList jobs={jobs}/>
-          </main>
-        </div>
+        <AppointmentJobList jobs={jobs}/>
       </>
     )
   }
