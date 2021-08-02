@@ -14,7 +14,11 @@ const AppointmentJob = ({ job }) => {
     return (
       <div
         class="job-list-entry-container"
-        onClick={() => { setChecked(!checked); }}
+        onClick={(e) => {
+          if (e.target.className !== 'more-less') {
+            setChecked(!checked);
+          }
+        }}
       >
         <div class="job-list-entry">
           <h4>{job.title}</h4>
@@ -28,13 +32,20 @@ const AppointmentJob = ({ job }) => {
   return (
     <div
       class="job-list-entry-container"
-      onClick={() => { setChecked(!checked); }}
+      onClick={(e) => {
+        console.log(e.target.className)
+        if (e.target.className !== 'more-less') {
+          setChecked(!checked);
+        }
+      }}
     >
       <div class="job-list-entry">
         <h4>{job.title}</h4>
         <p
           class="more-less"
-          onClick={() => { setClicked(!clicked); }}
+          onClick={() => {
+            setClicked(!clicked);
+          }}
         >More Info</p>
       </div>
       <input type="checkbox" value={checked} checked={checked} />
