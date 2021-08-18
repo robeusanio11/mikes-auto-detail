@@ -23,6 +23,12 @@ const AppointmentJobList = ({ jobs }) => (
         }
       </ul>
       </div>
+      <footer
+        id="appointmentModalFooter"
+        class="modal-footer"
+      >
+        <button id="continueButton">Continue</button>
+      </footer>
     </div>
 
   </div>

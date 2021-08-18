@@ -195,7 +195,7 @@ hr {
   min-height: 1px;
   max-height: 50em;
   height: auto;
-  overflow: auto;
+  overflow-x: hidden;
   border: 1px solid gray;
   border-radius: 5px;
   background-color: rgb(0,0,0);
@@ -221,6 +221,7 @@ hr {
   margin: 0 auto;
   padding: 10px;
   background-color: white;
+  overflow-x: hidden;
 }
 
 .modal-header img {
@@ -259,4 +260,23 @@ hr {
 
 .modal-appointment-list {
   width: 100%;
+}
+
+.modal-footer {
+  position: sticky;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid rgb(223, 223, 223);
+  margin: 0 auto;
+  padding: 10px;
+  background-color: white;
+}
+
+#continueButton {
+  margin-right: 50px;
 }
