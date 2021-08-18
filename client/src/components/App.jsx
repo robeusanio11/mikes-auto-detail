@@ -3,6 +3,7 @@ import InfoBar from './InfoBar.jsx';
 import JobList from './JobList.jsx';
 import Header from './Header.jsx';
 import AppointmentJobList from './AppointmentJobList.jsx';
+import AppointmentJobListTest from './AppointmentJobListTest.jsx';
 
 const jobs = [
   {
@@ -84,7 +85,8 @@ class App extends React.Component {
     // )
     return (
       <>
-        <AppointmentJobList jobs={jobs}/>
+        {/* <AppointmentJobList jobs={jobs}/> */}
+        <AppointmentJobListTest jobs={jobs}/>
       </>
     )
   }
