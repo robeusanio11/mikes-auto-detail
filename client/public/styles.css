@@ -132,10 +132,12 @@ hr {
 
 .job-list-entry-container {
   display: flex;
-  flex-direction: row;
   border: 1px solid rgb(223, 223, 223);
   border-radius: 7px;
   margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  min-width: 70%;
 }
 
 .job-list-entry-container:hover {
@@ -144,7 +146,7 @@ hr {
 }
 
 .job-list-entry {
-  width: 80%;
+  min-width: 80%;
 }
 
 .job-list-entry h4 {
@@ -251,15 +253,14 @@ hr {
 
 .appointment-modal-content {
   display: flex;
-  flex-direction: row;
 }
 
 .modal-sidebar {
-  width: 250px;
+  width: 30%;
 }
 
 .modal-appointment-list {
-  width: 100%;
+  min-width: 100%;
 }
 
 .modal-footer {

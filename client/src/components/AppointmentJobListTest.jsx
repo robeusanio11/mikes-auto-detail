@@ -14,14 +14,14 @@ const AppointmentJobList = ({ jobs }) => (
       </header>
 
       <div class="appointment-modal-content">
-      <div class="modal-sidebar">test</div>
-      <ul class="modal-appopintment-list">
-        {
-          jobs.map((job) => (
-            <AppointmentJob job={job} />
-          ))
-        }
-      </ul>
+        <div class="modal-sidebar">test</div>
+        <ul class="modal-appopintment-list">
+          {
+            jobs.map((job) => (
+              <AppointmentJob job={job} />
+            ))
+          }
+        </ul>
       </div>
       <footer
         id="appointmentModalFooter"
